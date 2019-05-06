@@ -31,19 +31,458 @@
 <fieldset>
 <legend><span class="number">2</span> Additional Info</legend>
 <label for="job" style="color:#000;">Categories:</label>
+</fieldset>
     <%#= form.select :category, ['Select a category','Electronics', 'Fashion', 'Furniture', 'Kitchen Stores', 'Restraunts', 'Hotels', 'General Stores', 'Grocery Stores'], :id => 'category' %>
-<%= select_tag(:category, options_for_select([['Select a category', 0],['Electronics', 1], ['Fashion', 2], ['Furniture', 3], ['Kitchen Stores', 4], ['Men Stores', 5], ['Restraunts', 6], ['Hotels', 7]]))%>
-</fieldset>
+<%#= select_tag(:category, options_for_select([['Select a category', 0],['Electronics', 1], ['Fashion', 2], ['Furniture', 3], ['Kitchen Stores', 4], ['Men Stores', 5], ['Restraunts', 6], ['Hotels', 7]]))%>
+<!-- <fieldset>
+
+<%#= select_tag(:sub_category, options_for_select([['Select a sub category', 0],['Ladies Stores', 1], ['Men Stores', 2], ['Men Stores', 3], ['Men Stores', 4], ['Men Stores', 5], ['Men Stores', 6], ['Men Stores', 7]]))%>
+</fieldset> -->
 <fieldset>
+<select name="dropdownmain" id="" title="">
+    <option value="dropdownmain1">Health Beauty & Babbycare</option>
+    <option value="dropdownmain2">Furniture & Homecare</option>
+    <option value="dropdownmain3">Fashion</option>
+    <option value="dropdownmain4">Grocery & Veg</option>
+    <option value="dropdownmain5">Tutor</option>
+    <option value="dropdownmain6">Doctors</option>
+    <option value="dropdownmain7">Business & Tax</option>
+    <option value="dropdownmain8">Salon</option>
+    <option value="dropdownmain9">Home Service & Repair</option>
+    <option value="dropdownmain10">Renovation</option>
+    <option value="dropdownmain11">Hardware</option>
+    <option value="dropdownmain12">Wedding</option>
+    <option value="dropdownmain13">Electronics</option>
+</select>
+<select name="dropdownmain1" id="" title="">
+  <option disabled> MAKEUP </option>
+    <option value="dropdownmain1-submenu1">Lips</option>
+    <option value="dropdownmain1-submenu2">Face</option>
+    <option value="dropdownmain1-submenu3">Nails</option>
+    <option value="dropdownmain1-submenu4">Kits</option>
+    <option value="dropdownmain1-submenu5">Tools</option>
+    <option disabled> SKIN </option>
+    <option value="dropdownmain1-submenu6">Facewash</option>
+    <option value="dropdownmain1-submenu7">Toner</option>
+    <option value="dropdownmain1-submenu8">Cleaner</option>
+    <option value="dropdownmain1-submenu9">Sunscreame</option>
+    <option value="dropdownmain1-submenu10">Bleach</option>
+    <option value="dropdownmain1-submenu11">Body Oil</option>
+    <option value="dropdownmain1-submenu12">Scrubs</option>
+    <option value="dropdownmain1-submenu13">Handwash</option>
+    <option value="dropdownmain1-submenu14">Hair Remover</option>
+     <option disabled> HAIR </option>
+    <option value="dropdownmain1-submenu15">Shampoo</option>
+    <option value="dropdownmain1-submenu16">Conditioner</option>
+    <option value="dropdownmain1-submenu17">Serum</option>
+    <option value="dropdownmain1-submenu18">Gels</option>
+    <option value="dropdownmain1-submenu19">Sprey</option>
+    <option value="dropdownmain1-submenu20">Colour</option>
+    <option value="dropdownmain1-submenu21">Brushes</option>
+    <option value="dropdownmain1-submenu22">Dryer</option>
+    <option value="dropdownmain1-submenu23">Straightner Roller</option>
+     <option disabled> SHAVING </option>
+    <option value="dropdownmain1-submenu24">Razors</option>
+    <option value="dropdownmain1-submenu25">Shavers</option>
+    <option value="dropdownmain1-submenu26">Cream</option>
+    <option value="dropdownmain1-submenu27">Brushes</option>
+    <option value="dropdownmain1-submenu28">Pre & Post</option>
+    <option value="dropdownmain1-submenu29">Moustach Care</option>
+    <option value="dropdownmain1-submenu30">Men's Creame</option>
+     <option disabled> FRAGNANCE </option>
+    <option value="dropdownmain1-submenu31">Deodrents</option>
+    <option value="dropdownmain1-submenu32">Body Mist</option>
+    <option value="dropdownmain1-submenu33">Perfume</option>
+     <option disabled> BABY CARE </option>
+    <option value="dropdownmain1-submenu34">Baby Food</option>
+    <option value="dropdownmain1-submenu35">Baby Cloth</option>
+    <option value="dropdownmain1-submenu36">Cleaner</option>
+    <option value="dropdownmain1-submenu37">Girls Cloth</option>
+    <option value="dropdownmain1-submenu38">Baby Shoes</option>
+    <option value="dropdownmain1-submenu39">Baby Soap</option>
+    <option value="dropdownmain1-submenu40">Baby Oil</option>
+    <option value="dropdownmain1-submenu41">Baby Creame</option>
+    <option value="dropdownmain1-submenu42">Boys Gear</option>
+    <option value="dropdownmain1-submenu43">Diapers</option>
+    <option value="dropdownmain1-submenu44">School Kits</option>
+    <option value="dropdownmain1-submenu45">Lunch Box</option>
+    <option value="dropdownmain1-submenu46">Water Bottles</option>
+    <option value="dropdownmain1-submenu47">School Bags</option>
+    <option value="dropdownmain1-submenu48">Toys</option>
+    <option value="dropdownmain1-submenu49">Birthday Gifts</option>
+    <option value="dropdownmain1-submenu50">Bed Protectors</option>
+    <option value="dropdownmain1-submenu51">Potty Chairs</option>
+    <option disabled> HEALTH CARE </option>
+    <option value="dropdownmain1-submenu52">Oral Care</option>
+    <option value="dropdownmain1-submenu53">Suppliments</option>
+    <option value="dropdownmain1-submenu54">Sanitary Pads</option>
+    <option value="dropdownmain1-submenu55">Weight Management</option>
+    <option value="dropdownmain1-submenu56">Sexual Wellness</option>
+    <option value="dropdownmain1-submenu57">Stimulants</option>
+     <option disabled> SPORTS </option>
+    <option value="dropdownmain1-submenu58">Fitness Equipments</option>
+    <option value="dropdownmain1-submenu59">Running</option>
+    <option value="dropdownmain1-submenu60">Swimming</option>
+    <option value="dropdownmain1-submenu61">Yoga</option>
+    <option value="dropdownmain1-submenu62">Cycling</option>
+    <option value="dropdownmain1-submenu63">Tennis</option>
+    <option value="dropdownmain1-submenu64">Brushes</option>
+    <option value="dropdownmain1-submenu65">Badminton</option>
+    <option value="dropdownmain1-submenu66">Squash</option>
+    <option value="dropdownmain1-submenu67">Table Tennis</option>
+    <option value="dropdownmain1-submenu68">Squash</option>
+    <option value="dropdownmain1-submenu69">Cricket</option>
+    <option value="dropdownmain1-submenu70">Football</option>
+    <option value="dropdownmain1-submenu71">Volley Ball</option>
+    <option value="dropdownmain1-submenu72">Basket Ball</option>
+    <option value="dropdownmain1-submenu73">Hockey</option>
+</select>
+<select name="dropdownmain2" id="" title="">
+  <option disabled>ROOMS</option>
+    <option value="dropdownmain2-submenu1">Sofa</option>
+    <option value="dropdownmain2-submenu2">Plastic Chair</option>
+    <option value="dropdownmain2-submenu3">Wooden Chair</option>
+    <option value="dropdownmain2-submenu4">Folding Chair</option>
+    <option value="dropdownmain2-submenu5">Stools</option>
+    <option value="dropdownmain2-submenu6">Coffee Table</option>
+    <option value="dropdownmain2-submenu7">Dining Tabel</option>
+    <option value="dropdownmain2-submenu8">Office Table</option>
+    <option value="dropdownmain2-submenu9">Side Table</option>
+    <option value="dropdownmain2-submenu10">Study table</option>
+    <option value="dropdownmain2-submenu11">Dressing Table</option>
+    <option value="dropdownmain2-submenu12">Queen Size Bed</option>
+    <option value="dropdownmain2-submenu13">King Size Bed</option>
+    <option value="dropdownmain2-submenu14">Singel Bed</option>
+    <option value="dropdownmain2-submenu15">Almirah</option>
+    <option value="dropdownmain2-submenu16">Storage Cabinets</option>
+    <option value="dropdownmain2-submenu17">Selves</option>
+    <option value="dropdownmain2-submenu18">Bean Bags</option>
+    <option value="dropdownmain2-submenu19">Shoe Racks</option>
+    <option disabled>BEDDING</option>
+    <option value="dropdownmain2-submenu20">Matress Single</option>
+    <option value="dropdownmain2-submenu21">Matress Double</option>
+    <option value="dropdownmain2-submenu22">Matress Protector</option>
+    <option value="dropdownmain2-submenu23">Bedsheet</option>
+    <option value="dropdownmain2-submenu24">Bed Cover</option>
+    <option value="dropdownmain2-submenu25">Blanket</option>
+    <option value="dropdownmain2-submenu26">Pillow</option>
+    <option value="dropdownmain2-submenu27">Chushion</option>
+    <option disabled>HOME DECOR</option>
+    <option value="dropdownmain2-submenu28">Pooja Special</option>
+    <option value="dropdownmain2-submenu29">Window Curtain</option>
+    <option value="dropdownmain2-submenu30">Door Curtain</option>
+    <option value="dropdownmain2-submenu31">Door Mat</option>
+    <option value="dropdownmain2-submenu32">Towel</option>
+    <option value="dropdownmain2-submenu33">Idols</option>
+    <option value="dropdownmain2-submenu34">Paintings</option>
+    <option value="dropdownmain2-submenu35">Photo Frame</option>
+    <option value="dropdownmain2-submenu36">Vases</option>
+    <option value="dropdownmain2-submenu37">Planers</option>
+    <option value="dropdownmain2-submenu38">Flower Pots</option>
+    <option disabled>KITCHEN</option>
+    <option value="dropdownmain2-submenu39">Cooker</option>
+    <option value="dropdownmain2-submenu40">Kadhai</option>
+    <option value="dropdownmain2-submenu41">Gas Stove</option>
+    <option value="dropdownmain2-submenu42">Tava</option>
+    <option value="dropdownmain2-submenu43">Roti Maker</option>
+    <option value="dropdownmain2-submenu44">Cooking Tools</option>
+    <option value="dropdownmain2-submenu45">Flying Pan</option>
+    <option value="dropdownmain2-submenu46">Container</option>
+    <option value="dropdownmain2-submenu47">Accessiocaries</option>
+    <option value="dropdownmain2-submenu48">Kitchen Organiser</option>
+    <option value="dropdownmain2-submenu49">Chopping Board</option>
+    <option value="dropdownmain2-submenu50">Apron</option>
+    <option value="dropdownmain2-submenu51">Gloves</option>
+    <option value="dropdownmain2-submenu52">Table Mats</option>
+    <option value="dropdownmain2-submenu53">Scrubber</option>
+    <option value="dropdownmain2-submenu54">Mobs</option>
+    <option value="dropdownmain2-submenu55">Dustbin</option>
+    <option disabled>HOMECARE</option>
+    <option value="dropdownmain2-submenu56">Cleaning Tools</option>
+    <option value="dropdownmain2-submenu57">Detergents</option>
+    <option value="dropdownmain2-submenu58">Disposables</option>
+    <option value="dropdownmain2-submenu59">Bathroom Cleaners</option>
+    <option value="dropdownmain2-submenu60">Toilet Cleaners</option>
+    <option value="dropdownmain2-submenu61">Freshners</option>
+    <option value="dropdownmain2-submenu62">Shoe Care</option>
+    <option value="dropdownmain2-submenu63">Home Cleaning</option>
+    <option value="dropdownmain2-submenu64">Domestic Help</option>
+    <option disabled>SERVICE & REPAIR</option>
+    <option value="dropdownmain2-submenu65">Wiring Repair</option>
+    <option value="dropdownmain2-submenu66">Laptop Repair</option>
+    <option value="dropdownmain2-submenu67">Mobile Repair</option>
+    <option value="dropdownmain2-submenu68">Electronics Repair</option>
+    <option value="dropdownmain2-submenu69">AC Repair</option>
+    <option value="dropdownmain2-submenu70">Fridge Repair</option>
+    <option value="dropdownmain2-submenu71">Washing Machine Reapir</option>
+    <option value="dropdownmain2-submenu72">Plumber</option>
+    <option value="dropdownmain2-submenu73">Cartpenter</option>
 
-<%= select_tag(:sub_category, options_for_select([['Select a sub category', 0],['a', 'b', 'c', 'd', 1], ['Men Stores', 2], ['Men Stores', 3], ['Men Stores', 4], ['Men Stores', 5], ['Men Stores', 6], ['Men Stores', 7]]))%>
+</select>
+<select name="dropdownmain3" id="" title="">
+    <option disabled>WOMEN"S CLOTHING</option>
+    <option value="dropdownmain3-submenu1">Saree</option>
+    <option value="dropdownmain3-submenu2">Kurta/Kurti</option>
+    <option value="dropdownmain3-submenu3">Salwar Suit</option>
+    <option value="dropdownmain3-submenu4">Blouse</option>
+    <option value="dropdownmain3-submenu5">Shirt</option>
+    <option value="dropdownmain3-submenu6">Top</option>
+    <option value="dropdownmain3-submenu7">Dupatta</option>
+    <option value="dropdownmain3-submenu8">Leggins</option>
+    <option value="dropdownmain3-submenu9">Jeans</option>
+    <option value="dropdownmain3-submenu10">Trousers</option>
+    <option value="dropdownmain3-submenu11">Joggers</option>
+    <option value="dropdownmain3-submenu12">Caps</option>
+    <option value="dropdownmain3-submenu13">Shorts</option>
+    <option value="dropdownmain3-submenu14">Lingerie</option>
+    <option disabled>MEN"S CLOTHING</option>
+    <option value="dropdownmain3-submenu15">Shirt</option>
+    <option value="dropdownmain3-submenu16">T shirt</option>
+    <option value="dropdownmain3-submenu17">Coat</option>
+    <option value="dropdownmain3-submenu18">Blazer</option>
+    <option value="dropdownmain3-submenu19">Sweatshirt</option>
+    <option value="dropdownmain3-submenu20">Tie</option>
+    <option value="dropdownmain3-submenu21">Jeans</option>
+    <option value="dropdownmain3-submenu22">Loungewear</option>
+    <option value="dropdownmain3-submenu23">Short</option>
+    <option value="dropdownmain3-submenu24">Trousers</option>
+    <option value="dropdownmain3-submenu25">Joggers</option>
+    <option value="dropdownmain3-submenu26">Underwear</option>
+    <option value="dropdownmain3-submenu27">Shocks</option>
+    <option disabled>BAGS</option>
+    <option value="dropdownmain3-submenu28">Hand Bags</option>
+    <option value="dropdownmain3-submenu29">Soulder Bas</option>
+    <option value="dropdownmain3-submenu30">Travel Bags</option>
+    <option value="dropdownmain3-submenu31">Tote Bags</option>
+    <option value="dropdownmain3-submenu32">Sling Bags</option>
+    <option value="dropdownmain3-submenu33">Shipping Bags</option>
+    <option value="dropdownmain3-submenu34">Messenger Bags</option>
+    <option value="dropdownmain3-submenu35">Clutches</option>
+    <option value="dropdownmain3-submenu36">Wallets</option>
+    <option value="dropdownmain3-submenu37">Pouches</option>
+    <option disabled>WATCHES</option>
+    <option value="dropdownmain3-submenu38">Women</option>
+    <option value="dropdownmain3-submenu39">Mens</option>
+    <option value="dropdownmain3-submenu40">Sports</option>
+    <option disabled>WOMEN"S FOOTWEAR</option>
+    <option value="dropdownmain3-submenu41">Heals</option>
+    <option value="dropdownmain3-submenu42">Sandels</option>
+    <option value="dropdownmain3-submenu43">Flip Flops</option>
+    <option value="dropdownmain3-submenu44">Slippers</option>
+    <option value="dropdownmain3-submenu45">Sports Shoes</option>
+    <option value="dropdownmain3-submenu46">Mojaris</option>
+    <option value="dropdownmain3-submenu47">FLats</option>
+    <option value="dropdownmain3-submenu48">Wedgs</option>
+    <option value="dropdownmain3-submenu49">Boots</option>
+    <option value="dropdownmain3-submenu50">Shocks</option>
+    <option disabled>MEN"S FOOTWEAR</option>
+    <option value="dropdownmain3-submenu51">Casuals</option>
+    <option value="dropdownmain3-submenu52">Sandels</option>
+    <option value="dropdownmain3-submenu53">Flip Flops</option>
+    <option value="dropdownmain3-submenu54">Slippers</option>
+    <option value="dropdownmain3-submenu55">Sports Shoes</option>
+    <option value="dropdownmain3-submenu56">Formals</option>
+    <option value="dropdownmain3-submenu57">Shocks</option>
+    <option disabled>ACCESSIORIES</option>
+    <option value="dropdownmain3-submenu58">Eye Glasses</option>
+    <option value="dropdownmain3-submenu59">Sunglasses</option>
+    <option value="dropdownmain3-submenu60">Caps</option>
+</select>
+<select name="dropdownmain4" id="" title="">
+    <option disabled>GROCERY</option>
+    <option value="dropdownmain4-submenu1">Milk</option>
+    <option value="dropdownmain4-submenu2">Beverages</option>
+    <option value="dropdownmain4-submenu3">Rice</option>
+    <option value="dropdownmain4-submenu4">Atta</option>
+    <option value="dropdownmain4-submenu5">Oil</option>
+    <option value="dropdownmain4-submenu6">Dal</option>
+    <option value="dropdownmain4-submenu7">Salt</option>
+    <option value="dropdownmain4-submenu8">Suger</option>
+    <option value="dropdownmain4-submenu9">Masala</option>
+    <option value="dropdownmain4-submenu10">Noodles</option>
+    <option value="dropdownmain4-submenu11">Snacks</option>
+    <option value="dropdownmain4-submenu12">Biscuits</option>
+    <option value="dropdownmain4-submenu13">Dry Fruits</option>
+    <option value="dropdownmain4-submenu14">Pickles</option>
+    <option value="dropdownmain4-submenu15">Dairy</option>
+    <option value="dropdownmain4-submenu16">Stationary</option>
+    <option disabled>VEG</option>
+    <option value="dropdownmain4-submenu17">Patato</option>
+    <option value="dropdownmain4-submenu18">Onion</option>
+    <option value="dropdownmain4-submenu19">Tamato</option>
+    <option value="dropdownmain4-submenu20">Ginger</option>
+    <option value="dropdownmain4-submenu21">Garlic</option>
+    <option value="dropdownmain4-submenu22">Cardimom</option>
+    <option value="dropdownmain4-submenu23">Leafy Veg</option>
+    <option value="dropdownmain4-submenu24">Root Veg</option>
+    <option value="dropdownmain4-submenu25">All Vegetables</option>
+    <option disabled>NON VEG</option>
+    <option value="dropdownmain4-submenu26">Eggs</option>
+    <option value="dropdownmain4-submenu27">Fish</option>
+    <option value="dropdownmain4-submenu28">Chicken</option>
+    <option value="dropdownmain4-submenu29">Mutton</option>
+    <option disabled>Fruits</option>
+    <option value="dropdownmain4-submenu30">Banana</option>
+    <option value="dropdownmain4-submenu31">Oranges</option>
+    <option value="dropdownmain4-submenu32">Apples</option>
+    <option value="dropdownmain4-submenu33">Grapes</option>
+    <option value="dropdownmain4-submenu34">Pomegranate</option>
+    <option value="dropdownmain4-submenu35">Water Melons</option>
+    <option value="dropdownmain4-submenu36">Mango</option>
+    <option value="dropdownmain4-submenu37">Naspati</option>
+    <option value="dropdownmain4-submenu38">Papaya</option>
+    <option value="dropdownmain4-submenu39">Avacado</option>
+    <option value="dropdownmain4-submenu40">Coconut</option>
+    <option value="dropdownmain4-submenu41">Dates</option>
+    <option value="dropdownmain4-submenu42">Jack Fruit</option>
+
+</select>
+
+
+
+
+<select name="dropdownmain5" id="" title="">
+    <option disabled>TUTOR</option>
+    <option value="dropdownmain5-submenu1">Acedemic</option>
+    <option value="dropdownmain5-submenu2">Language</option>
+    <option value="dropdownmain5-submenu3">Music</option>
+    <option value="dropdownmain5-submenu4">Dance</option>
+    <option value="dropdownmain5-submenu5">Sports</option>
+    <option value="dropdownmain5-submenu6">Sewing</option>
+    <option value="dropdownmain5-submenu7">Cooking</option>
+    <option value="dropdownmain5-submenu8">Institutes</option>
+</select>
+
+
+
+
+<select name="dropdownmain6" id="" title="">
+    <option disabled>DOCTORS</option>
+    <option value="dropdownmain6-submenu1">General Physicsian</option>
+    <option value="dropdownmain6-submenu2">Child Specialist</option>
+    <option value="dropdownmain6-submenu3">Gynocologist</option>
+    <option value="dropdownmain6-submenu4">ENT SPecialist</option>
+    <option value="dropdownmain6-submenu5">Eye Specialist</option>
+    <option value="dropdownmain6-submenu6">Skin Specialist</option>
+    <option value="dropdownmain6-submenu7">Dentist</option>
+    <option value="dropdownmain6-submenu8">Phycologist</option>
+    <option value="dropdownmain6-submenu9">Hospitals</option>
+    <option value="dropdownmain6-submenu10">Medical Stores</option>
+    <option value="dropdownmain6-submenu11">Physiotherapist</option>
+</select>
+
+
+
+<select name="dropdownmain7" id="" title="">
+    <option disabled>BUSINESS & TAX</option>
+    <option value="dropdownmain7-submenu1">Tax Filing</option>
+    <option value="dropdownmain7-submenu2">Company Registration</option>
+    <option value="dropdownmain7-submenu3">GST Registration</option>
+    <option value="dropdownmain7-submenu4">Lawyer</option>
+    <option value="dropdownmain7-submenu5">Web Designer</option>
+    <option value="dropdownmain7-submenu6">CCTV Camera</option>
+</select>
+
+
+
+<select name="dropdownmain8" id="" title="">
+    <option disabled>SALON</option>
+    <option value="dropdownmain8-submenu1">Women</option>
+    <option value="dropdownmain8-submenu2">Men</option>
+    <option value="dropdownmain8-submenu3">Unisex</option>
+    <option value="dropdownmain8-submenu4">Makeup</option>
+    <option value="dropdownmain8-submenu5">Massage</option>
+</select>
+
+
+
+<select name="dropdownmain9" id="" title="">
+    <option disabled>RENOVATION</option>
+    <option value="dropdownmain9-submenu1">Engineer</option>
+    <option value="dropdownmain9-submenu2">Vastu Sastra</option>
+    <option value="dropdownmain9-submenu3">Contracter</option>
+    <option value="dropdownmain9-submenu4">Interior</option>
+    <option value="dropdownmain9-submenu5">Furniture</option>
+    <option value="dropdownmain9-submenu6">Painter</option>
+</select>
+
+
+
+
+
+<select name="dropdownmain10" id="" title="">
+    <option disabled>DOCTORS</option>
+    <option value="dropdownmain10-submenu1">Paints</option>
+    <option value="dropdownmain10-submenu2">Glass</option>
+    <option value="dropdownmain10-submenu3">Steel Bar</option>
+    <option value="dropdownmain10-submenu4">Cement</option>
+    <option value="dropdownmain10-submenu5">Sand</option>
+    <option value="dropdownmain10-submenu6">Agregates</option>
+    <option value="dropdownmain10-submenu7">Tiles</option>
+    <option value="dropdownmain10-submenu8">Plywood</option>
+    <option value="dropdownmain10-submenu9">Panel</option>
+    <option value="dropdownmain10-submenu10">Hinges & Fitings</option>
+    <option value="dropdownmain10-submenu11">Brackets & Holders</option>
+    <option value="dropdownmain10-submenu12">Tapes</option>
+    <option value="dropdownmain10-submenu13">Mirriors</option>
+    <option value="dropdownmain10-submenu14">Screw Nails & Nuts</option>
+</select>
+
+
+
+<select name="dropdownmain11" id="" title="">
+    <option disabled>WEDDNGS</option>
+    <option value="dropdownmain11-submenu1">Decoration</option>
+    <option value="dropdownmain11-submenu2">FLorists</option>
+    <option value="dropdownmain11-submenu3">Tent House</option>
+    <option value="dropdownmain11-submenu4">Wedding Hall</option>
+    <option value="dropdownmain11-submenu5">Caterers</option>
+    <option value="dropdownmain11-submenu6">Photographers</option>
+    <option value="dropdownmain11-submenu7">Jwellery</option>
+    <option value="dropdownmain11-submenu8">Makeup</option>
+    <option value="dropdownmain11-submenu9">Mehndi</option>
+    <option value="dropdownmain11-submenu10">Pandit</option>
+    <option value="dropdownmain11-submenu11">Sound System</option>
+    <option value="dropdownmain11-submenu12">Sweet Shop</option>
+    <option value="dropdownmain11-submenu13">Event Organisers</option>
+    <option value="dropdownmain11-submenu14">Fireworks</option>
+    <option value="dropdownmain11-submenu15">Singers</option>
+</select>
+
+
+
+
+
+<select name="dropdownmain12" id="" title="">
+    <option disabled>ELECTRONCS</option>
+    <option value="dropdownmain12-submenu1">All Electronic Items</option>
+    <option value="dropdownmain12-submenu2">AC</option>
+    <option value="dropdownmain12-submenu3">Fridge</option>
+    <option value="dropdownmain12-submenu4">Washing Machine</option>
+    <option value="dropdownmain12-submenu5">Microwave</option>
+    <option value="dropdownmain12-submenu6">TV</option>
+    <option value="dropdownmain12-submenu7">Camera</option>
+    <option value="dropdownmain12-submenu8">Speaker</option>
+    <option value="dropdownmain12-submenu9">Headphone</option>
+    <option value="dropdownmain12-submenu10">Home Theater</option>
+    <option value="dropdownmain12-submenu11">Portable Audio</option>
+    <option value="dropdownmain12-submenu12">Heating / Cooling</option>
+    <option value="dropdownmain12-submenu13">Light</option>
+    <option value="dropdownmain12-submenu14">Fan</option>
+     <option disabled>ACCESSORIES</option>
+    <option value="dropdownmain12-submenu1">Cases & Covers</option>
+    <option value="dropdownmain12-submenu2">Power Banks</option>
+    <option value="dropdownmain12-submenu3">Screen Guards</option>
+
+</select>
+
+
 </fieldset>
-
 <fieldset>
 <legend><span class="number">3</span> Details</legend>
 <%= form.text_field :price, id: :product_price, placeholder: "Price of your product/service (optional for services)" %>
-<%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  product.state ), {}, id: "state"%>
-<%= form.select :city, options_for_select([["Select a City",""]]),{}, :id => 'city' %>
+<%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  product.state ), {}, id: "state", name: "dropdownmain"%>
+<%= form.select :city, options_for_select([["Select a City",""]]),{}, :id => 'city', name: "dropdownmain" %>
 </fieldset>
 <div class="actions">
     <%= form.submit %>
@@ -54,15 +493,11 @@
 
 <!-- FOR Sub category -->
 <script type="text/javascript">
-   $('#sub_category').hide();
-   $("select#category").change(function() {
-    debugger;
-    if(this.value == 0){
-      alert("Please select a category.");
-      $('#sub_category').hide();
-    }else{
-      $('#sub_category').show();
-    }
+$('select[name!="dropdownmain"]').hide();
+$('select[name="' + $('select[name="dropdownmain"]').val() + '"]').show();
+$('select[name="dropdownmain"]').change(function(){
+    $('select[name!="dropdownmain"]').hide();
+    $('select[name="' + $(this).val() + '"]').show();
 });
 </script>
 
