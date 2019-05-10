@@ -1,39 +1,170 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 <% if mobile_device == "mobile" %>
 <br>
 <hr>
 <form class="form-wrap mt-4" style="background:#252A33; padding-top:27px;">
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <input type="text" placeholder="Search Anything" class="btn-group1" style="width:160px;">
-                                        <input type="text" placeholder="District" class="btn-group2"style="width:160px;">
+                                        <input type="text" placeholder="Search Anything" class="btn-group1" style="width:180px;">
+                                        <input type="text" placeholder="District" class="btn-group2"style="width:180px;">
                                         
                                         <a href="/welcome/search"><img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" style="height:20px; width:20px;"></a>
                                     </div>
                                 </form>
-                                 <% else %>
-                                 <br>
-                                 <br>
-                                <% end %>
+                                <% else %>
+                                <br>
+                                 <% end %>
 
+<br>
+<br>
 <br>
 
 <div class="center" style="text-align:center;">
   <h3>Grocery & Veg</h3>
 </div>
 
-
-<div class="container" style="background-color:#fff; text-align:center;">
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">GROCERY</button>
+  <div id="demo" class="collapse">
+<div class="container" style="background-color:#fff;">
   <div class="row">
-    <div class="col" style="padding-left:0px; padding-right:0px;">
-     <img src="../assets/g1.jpg" style="height:100px; width:100px;" alt="Park">
-     <figcaption><b>Beverages</b></figcaption>
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv1.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Milk</b></figcaption>
     </div>
     <div class="col" style="padding-left:0px; padding-right:0px;">
-      <img src="../assets/g2.jpg" style="height:100px; width:100px;" alt="Park">
+      <img src="../assets/gv2.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Beverages</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv3.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Rice</b></figcaption>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv4.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Atta</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv5.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Oil</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv6.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Dal</b></figcaption>
+    </div>
+  </div>
+    <br>
+  <br>
+  <br>
+
+
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv7.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Salt</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv8.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Sugar</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv9.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Masala</b></figcaption>
+    </div>
+  </div>
+    <br>
+  <br>
+  <br>
+
+
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv10.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Noodles</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv11.jpg" style="height:100px; width:100px;" alt="Park">
       <figcaption><b>Snacks</b></figcaption>
     </div>
     <div class="col" style="padding-left:0px; padding-right:0px;">
-      <img src="../assets/g3.jpg" style="height:100px; width:100px;" alt="Park">
-      <figcaption><b>Breakfast Items</b></figcaption>
+      <img src="../assets/gv12.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Biscuits</b></figcaption>
+    </div>
+  </div>
+    <br>
+  <br>
+  <br>
+
+
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv13.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Dry Fruits</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv14.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Pickels</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv15.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Dairy</b></figcaption>
+    </div>
+
+  </div>
+    <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv16.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Stationary</b></figcaption>
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">VEG</button>
+  <div id="demo2" class="collapse">
+<div class="container" style="background-color:#fff;">
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv17.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Patato</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv18.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Onion</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv19.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Tamato</b></figcaption>
     </div>
   </div>
   <br>
@@ -43,16 +174,84 @@
 
   <div class="row">
     <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
-     <img src="../assets/g4.jpg" style="height:100px; width:100px;" alt="Park">
-     <figcaption><b>Lunch Items</b></figcaption>
+     <img src="../assets/gv20.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Ginger</b></figcaption>
     </div>
     <div class="col" style="padding-left:0px; padding-right:0px;">
-      <img src="../assets/g5.jpg" style="height:100px; width:100px;" alt="Park">
-      <figcaption><b>Dairy Items</b></figcaption>
+      <img src="../assets/gv21.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Garlic</b></figcaption>
     </div>
     <div class="col" style="padding-left:0px; padding-right:0px;">
-      <img src="../assets/g6.jpg" style="height:100px; width:100px;" alt="Park">
-      <figcaption><b>Frozen Food</b></figcaption>
+      <img src="../assets/gv22.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Cardimom</b></figcaption>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv23.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>leafy Veg</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv24.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Root Veg</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv25.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>All Veg</b></figcaption>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">NON VEG</button>
+  <div id="demo3" class="collapse">
+<div class="container" style="background-color:#fff;">
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv26.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Eggs</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv27.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Fish</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv28.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Chicken</b></figcaption>
     </div>
   </div>
   <br>
@@ -62,18 +261,135 @@
 
   <div class="row">
     <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
-     <img src="../assets/g7.jpg" style="height:100px; width:100px;" alt="Park">
-     <figcaption><b>Vegetables</b></figcaption>
-    </div>
-    <div class="col" style="padding-left:0px; padding-right:0px;">
-      <img src="../assets/g8.jpg" style="height:100px; width:100px;" alt="Park">
-      <figcaption><b>Fruits</b></figcaption>
-    </div>
-    <div class="col" style="padding-left:0px; padding-right:0px;">
-      <img src="../assets/g9.jpg" style="height:100px; width:100px;" alt="Park">
-      <figcaption><b>Household Needs</b></figcaption>
+     <img src="../assets/gv29.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Mutton</b></figcaption>
     </div>
   </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">FRUITS</button>
+  <div id="demo4" class="collapse">
+<div class="container" style="background-color:#fff;">
+  <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv30.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Banana</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv31.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Orange</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv32.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Apple</b></figcaption>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+    <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv33.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Grapes</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv34.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Pomergranet</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv35.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Water Melons</b></figcaption>
+    </div>
+  </div>
+
+
+
+   <br>
+  <br>
+  <br>
+    <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv36.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Mango</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv37.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Naspati</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv38.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Papaya</b></figcaption>
+    </div>
+  </div>
+
+
+
+
+
+   <br>
+  <br>
+  <br>
+    <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv39.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Avocado</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv40.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Coconut</b></figcaption>
+    </div>
+    <div class="col" style="padding-left:0px; padding-right:0px;">
+      <img src="../assets/gv41.jpg" style="height:100px; width:100px;" alt="Park">
+      <figcaption><b>Dates</b></figcaption>
+    </div>
+  </div>
+
+
+
+   <br>
+  <br>
+  <br>
+    <div class="row">
+    <div class="col" style="padding-left:0px; padding-right:0px; text-align:center;">
+     <img src="../assets/gv42.jpg" style="height:100px; width:100px;" alt="Park">
+     <figcaption><b>Jackfruit</b></figcaption>
+    </div>
+  </div>
+  <br>
+</div>
 </div>
 
 
