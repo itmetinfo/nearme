@@ -26,8 +26,26 @@
 <div class="center" style="text-align:center;">
   <h3>Health Babycare & Beauty</h3>
 </div>
-
+<div id="myGroup">
+  <script>
+  var $myGroup = $('#myGroup');
+$myGroup.on('show.bs.collapse','.collapse', function() {
+    $myGroup.find('.collapse.in').collapse('hide');
+});
+  </script>
+  <div class="center" style="text-align:center;">
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Makeup</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">SKIN</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">HAIR</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">SHAVING</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">FRAGNENCE</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">BABY CARE</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7">HEALTH CARE</button>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo8">SPORTS</button>
+</div>
+<br>
+<br>
+
   <div id="demo" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -81,7 +99,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">SKIN</button>
+
   <div id="demo2" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -168,7 +186,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">HAIR</button>
+
   <div id="demo3" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -260,7 +278,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">SHAVING</button>
+
   <div id="demo4" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -339,7 +357,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">FRAGNENCE</button>
+
   <div id="demo5" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -376,7 +394,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">BABY CARE</button>
+
   <div id="demo6" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -566,7 +584,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7">HEALTH CARE</button>
+
   <div id="demo7" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -634,7 +652,7 @@
 
 
 
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo8">SPORTS</button>
+
   <div id="demo8" class="collapse">
 <div class="container" style="background-color:#fff;">
   <div class="row">
@@ -719,5 +737,6 @@
      <figcaption><b>Hockey</b></figcaption>
     </div>
   </div>
+</div>
 </div>
 </div>
