@@ -62,8 +62,97 @@ class WelcomeController < ApplicationController
   	@products = Product.all
   end
   def do11
-  	@products = Product.all
+    @products = Product.all
   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  def ea1
+    @products = Product.all
+  end
+  def ea2
+    @products = Product.all
+  end
+  def ea3
+    @products = Product.all
+  end
+  def ea4
+    @products = Product.all
+  end
+  def ea5
+    @products = Product.all
+  end
+  def ea6
+    @products = Product.all
+  end
+  def ea7
+    @products = Product.all
+  end
+  def ea8
+    @products = Product.all
+  end
+  def ea9
+    @products = Product.all
+  end
+  def ea10
+    @products = Product.all
+  end
+  def ea11
+    @products = Product.all
+  end
+  def ea12
+    @products = Product.all
+  end
+  def ea13
+    @products = Product.all
+  end
+  def ea14
+    @products = Product.all
+  end
+  def ea15
+    @products = Product.all
+  end
+  def ea16
+    @products = Product.all
+  end
+
+  def ea17
+    @products = Product.all
+  end
+  def ea18
+    @products = Product.all
+  end
+
+
 
 
 
