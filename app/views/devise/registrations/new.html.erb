@@ -2,7 +2,12 @@
 <br>
 <br>
 <!-- REGISTRATION FORM -->
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<% if mobile_device == "mobile" %>
+<%= render 'welcome/sub' %>
+<% end %>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
