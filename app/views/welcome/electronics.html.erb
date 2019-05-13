@@ -1,24 +1,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/bootstrap.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
-    <!-- Simple line Icon -->
-    <link rel="stylesheet" href="/assets/simple-line-icons.css">
-    <!-- Themify Icon -->
-    <link rel="stylesheet" href="/assets/themify-icons.css">
-    <!-- Hover Effects -->
-    <link rel="stylesheet" href="/assets/set1.css">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="/assets/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <% if mobile_device == "mobile" %>
+<%= render 'welcome/sub' %>
 <br>
 <hr>
-<form class="form-wrap mt-4" style="background:#252A33; padding-top:27px;">
+<form class="form-wrap mt-4" style="background:#252A33; padding-top:20px; text-align: center; ">
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <input type="text" placeholder="Search Anything" class="btn-group1" style="width:180px;">
                                         
@@ -29,9 +16,7 @@
                                 <br>
                                  <% end %>
 
-<br>
-<br>
-<br>
+
 
 
 <div id="myGroup">
