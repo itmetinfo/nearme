@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'welcome/home'
   root "welcome#home"
   get 'welcome/rest'
+  get 'welcome/old'
   get 'welcome/auto'
   get 'welcome/electronics'
   get 'welcome/fashion'
@@ -33,6 +34,25 @@ Rails.application.routes.draw do
   get 'welcome/about'
   get 'welcome/search'
   get 'welcome/decor'
+  get 'welcome/sny'
+
+
+
+
+
+
+
+
+
+
+  get 'welcome/shop1'
+  get 'welcome/shop2'
+  get 'welcome/shop3'
+  get 'welcome/shop4'
+  get 'welcome/shop5'
+  get 'welcome/shop6'
+  get 'welcome/shop7'
+  get 'welcome/shop8'
 
 
 

@@ -529,6 +529,62 @@ def hard1
     @products = Product.all
   end
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  def old
+    @products = Product.all
+  end
+
+
+
+  def shop1
+    @shops = Shop.all
+  end
+  def shop2
+    @shops = Shop.all
+  end
+  def shop3
+    @shops = Shop.all
+  end
+  def shop4
+    @shops = Shop.all
+  end
+  def shop5
+    @shops = Shop.all
+  end
+  def shop6
+    @shops = Shop.all
+  end
+  def shop7
+    @shops = Shop.all
+  end
+  def shop8
+    @shops = Shop.all
+  end
+
   def search
  	@products = Product.where('(name LIKE ? OR description LIKE ? )', "%#{params[:search]}%", "%#{params[:search]}%")
  	@products = @products.where(state: params[:state]) if params[:state].present?
