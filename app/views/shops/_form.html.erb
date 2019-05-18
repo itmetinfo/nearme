@@ -39,13 +39,9 @@
           <%= form.file_field :imageshop, id: :shop_imageshop %>
         </fieldset>
         
+
         <fieldset>
-          <legend><span class="number">2</span>Important Infos</legend>
-          <label for="bio">Location:</label>
-          <%= form.text_field :location, id: :shop_location %>
-        </fieldset>
-        <fieldset>
-          <%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  shop.state ), {}, id: "state"%>
+          <%= form.select :state, options_for_select([["Select a Location",""]] + State.all.map { |c| [c.name, c.id] },selected:  shop.state ), {}, id: "state"%>
         </fieldset>
         <fieldset>
           <label for="bio">Registeration Number:</label>

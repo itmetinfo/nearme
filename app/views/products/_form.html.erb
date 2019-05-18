@@ -686,7 +686,7 @@
 <fieldset>
 <legend><span class="number">3</span> Details</legend>
 <%= form.text_field :price, id: :product_price, placeholder: "Price of your product/service (optional for services)" %>
-<%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  product.state ), {}, id: "state"%>
+<%= form.select :state, options_for_select([["Select a Location",""]] + State.all.map { |c| [c.name, c.id] },selected:  product.state ), {}, id: "state"%>
 
 </fieldset>
 <div class="actions">
