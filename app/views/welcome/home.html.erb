@@ -59,7 +59,7 @@
                                        
                                         
                                         <%= select_tag :state, options_for_select([["Select a City",""]] + State.all.map { |c| [c.name, c.id] } ), id: "state"%>
-                                        <%= select_tag :city, options_for_select([["Select a Area",""]]), :id => 'city' %>
+                                       
                                         <a href="/welcome/search" class="btn-form search-btn">SEARCH<i class="pe-7s-angle-right"></i></a>
                                     </div>
                                 </form>
@@ -409,7 +409,7 @@ function closeNav() {
                                        
                                         
                                         <%= select_tag :state, options_for_select([["Select a City",""]] + State.all.map { |c| [c.name, c.id] } ), id: "state"%>
-                                        <%= select_tag :city, options_for_select([["Select an Area",""]]), :id => 'city' %>
+                                       
                                         <a href="/welcome/search" class="btn-form search-btn">SEARCH<i class="pe-7s-angle-right"></i></a>
                                     </div>
                                 </form>
@@ -673,6 +673,8 @@ function closeNav() {
 }
 </script>
 
+ </script>
+
     <script>
         $(window).scroll(function() {
             // 100 = The point you would like to fade the nav in.
@@ -705,41 +707,11 @@ function closeNav() {
           var $this = $(this);
           var $href = $this.attr("href");
           var state = $("#state").val()
-          var city = $("#city").val()
+      
           var search = $("#search").val()
-          window.location = $href + '?search=' + search+ "&state=" +state+ "&city="+ city
+          window.location = $href + '?search=' + search+ "&state=" +state
         })
-        function getCitiesOfState(val){
-        $.ajax({
-          dataType: "json",
-          cache: false,
-          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
-          url: '/get_cities_by_state',
-          type: 'post',
-          data: {"state" : val},
-          timeout: 5000,
-          error: function(XMLHttpRequest, errorTextStatus, error) {
-           alert("Failed to submit : " + errorTextStatus + " ;" + error);
-          },
-          success: function(data) {
-           // Clear all options from city select
-           $("select#city option").remove();
-           //put in a empty default line
-           // Fill city select
-
-           var row = "<option value=\"" + "" + "\">" + "Select An Area" + "</option>";
-           $(row).appendTo("select#city");
-           $.each(data, function(i, j) {
-            if(j.id == selectedCity){
-              row = "<option value=\"" + j.id + "\" selected>" + j.name + "</option>";
-            }else{
-              row = "<option value=\"" + j.id + "\">" + j.name + "</option>"; 
-            }
-            $(row).appendTo("select#city");
-           });
-          }
-         });
-       }
+       
     </script>
 </body>
 <% end %>

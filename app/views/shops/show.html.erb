@@ -69,7 +69,7 @@
       <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-7 heading-section text-center ftco-animate">
+          <div class="col-md-7 heading-section text-center">
             <h2 class="mb-4">Products</h2>
             <p>All the products listed here are directly sold by <%= @shop.name %> and NearClick is just there delivery partner, we deliver the product as it is without opening the package.</p>
           </div>
@@ -80,26 +80,22 @@
 
 
 
-              <% @products.each do |product| %>
+              <% @shop.products.each do |product| %>
+
           <div class="col-md-4">
-            <div class="blog-entry ftco-animate">
+            <div class="blog-entry">
               <a href="#" class="img img-2"><img src="<%= product.image %>" style="width:300px; height:250px;"> </a>
               <div class="text text-2 pt-2 mt-3">
                 <span class="category mb-3 d-block"><a href="#"><%= product.name %></a></span>
                 <h3 class="mb-4"><a href="#"><%= product.category %></a></h3>
                 <h3 class="mb-4"><a href="#">Rs: <%= product.price %></a></h3>
                 <p class="mb-4"><%= product.description %></p>
-                <div class="author mb-4 d-flex align-items-center">
-                  <div class="img mb-4"><img src="<%= @shop.imageshop %>" style="width:50px; height:50px; border-radius: 50%;"></div>
-                  <div class="ml-3 info">
-                    <span>Sold By</span>
-                    <h3><a href="#"><%= @shop.name %></a></h3>
-                  </div>
-                </div>
+                
                 <div class="meta-wrap align-items-center">
                   
                   <div class="half">
-                    <p><a href="#" class="btn btn-success">Order Now </a></p>
+                
+                    <p><%= link_to "View Product", product, class: "btn btn-success" %></p>
                   </div>
                 </div>
               </div>

@@ -45,6 +45,9 @@
           <%= form.text_field :location, id: :shop_location %>
         </fieldset>
         <fieldset>
+          <%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  shop.state ), {}, id: "state"%>
+        </fieldset>
+        <fieldset>
           <label for="bio">Registeration Number:</label>
           <%= form.text_field :registeration_number, id: :registeration_number %>
         </fieldset>

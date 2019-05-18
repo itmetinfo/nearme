@@ -16,6 +16,7 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = current_user.shop.products.build
+    
   end
 
   # GET /products/1/edit
@@ -63,11 +64,8 @@ class ProductsController < ApplicationController
     end
   end
   #new methods
-  def get_cities_by_state
-    @cities = State.find(params[:state]).cities
-    respond_to do |format|
-      format.json { render :json => @cities }
-    end
+   def get_cities_by_state
+
   end 
 
   private
@@ -78,6 +76,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :price, :description, :image, :imagetwo, :imagethree, :category, :city, :state, :sub_category)
+      params.require(:product).permit(:name, :price, :description, :image, :imagetwo, :imagethree, :category, :state, :sub_category)
     end
 end

@@ -83,7 +83,8 @@ function closeNav() {
                             
                             <img src="/assets/user.png"  onclick="openNav()" style="height:40px; width:40px;">
 
-<a href="/cart">
+<a href="#">
+  <%= link_to pluralize(current_cart.items_count, ''), cart_path %>
             <img src="https://cdn4.iconfinder.com/data/icons/online-shopping-31/64/shopping-commerce-supermarket-cart-store-online-512.png" style="height:40px; width:40px;"  alt="ICON">
                            </a>
                             <a class="navbar-brand" style="font-size:20px;" href="/">NearClick</a>
@@ -586,7 +587,7 @@ function closeNav() {
   <a href="/products/new">Add Product</a>
   <%= link_to 'Manage Shop', current_user.shop %>
   <% else %>
-  <a href="#"><span>0</span> Your Cart</a>
+  <a href="#"><span><%= link_to pluralize(current_cart.items_count, ''), cart_path %></span> Your Cart</a>
   <a href="#">Wishlist</a>
   <% end %>
   <% if current_user && current_user.is_agent? %>
