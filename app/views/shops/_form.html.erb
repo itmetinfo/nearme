@@ -41,7 +41,10 @@
         
 
         <fieldset>
-          <%= form.select :state, options_for_select([["Select a Location",""]] + State.all.map { |c| [c.name, c.id] },selected:  shop.state ), {}, id: "state"%>
+          <%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  shop.state ), {}, id: "state", name: "dropdownmain"%>
+          </fieldset>
+            <fieldset>
+<%= form.select :city, options_for_select([["Select a City",""]]),{}, :id => 'city', name: "dropdownmain" %>
         </fieldset>
         <fieldset>
           <label for="bio">Registeration Number:</label>

@@ -12,6 +12,14 @@
 
 ActiveRecord::Schema.define(version: 20190502014021) do
 
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.integer "state_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["state_id"], name: "index_cities_on_state_id"
+  end
+
   create_table "order_items", force: :cascade do |t|
     t.integer "order_id"
     t.integer "product_id"
@@ -54,6 +62,7 @@ ActiveRecord::Schema.define(version: 20190502014021) do
     t.integer "user_id"
     t.integer "shop_id"
     t.string "state"
+    t.string "city"
     t.string "sub_category"
     t.index ["shop_id"], name: "index_products_on_shop_id"
   end
@@ -79,8 +88,9 @@ ActiveRecord::Schema.define(version: 20190502014021) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.integer "registeration_number_id"
     t.string "state"
+    t.string "city"
+    t.integer "registeration_number_id"
     t.index ["registeration_number_id"], name: "index_shops_on_registeration_number_id"
     t.index ["user_id"], name: "index_shops_on_user_id"
   end
