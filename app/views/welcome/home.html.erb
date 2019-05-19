@@ -311,9 +311,6 @@ function closeNav() {
           type: 'post',
           data: {"state" : val},
           timeout: 5000,
-          error: function(XMLHttpRequest, errorTextStatus, error) {
-           alert("Failed to submit : " + errorTextStatus + " ;" + error);
-          },
           success: function(data) {
            // Clear all options from city select
            $("select#city option").remove();
