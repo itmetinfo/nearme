@@ -1,3 +1,376 @@
+<% if mobile_device == "mobile" %>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="author" content="Colorlib">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Page Title -->
+    <title>Listing &amp; Directory Website Template</title>
+    <!-- Bootstrap CSS -->
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="/assets/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="/assets/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="/assets/set1.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+  <%= render 'welcome/sub' %>
+
+
+<section class="slider d-flex align-items-center" style="max-height:80px;">
+        <!-- <img src="/assets/slider.jpg" class="img-fluid" alt="#"> -->
+        <div class="container" >
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="slider-title_box">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-content_wrap">
+                                    
+                                    
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-10">
+                                <form class="form-wrap mt-4">
+                                  
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <input type="text" placeholder="What are your looking for?" id="search" class="btn-group1">
+                                       
+                                        
+                                        <%= select_tag :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] } ), id: "state"%>
+                                        <%= select_tag :city, options_for_select([["Select a City",""]]), :id => 'city' %>
+                                       
+                                        <a href="/welcome/search" class="btn-form search-btn">SEARCH<i class="pe-7s-angle-right"></i></a>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                <div class="col-md-5">
+                    <div class="styled-heading">
+                        <h3>What are you finding?</h3>
+                    </div>
+                </div>
+
+    <section class="section-division mb-1">
+    <div class="container my-1">
+      <div class="row">
+        <div class="col col-sm-6">
+          <a href="/welcome/events">
+          <img src="/assets/events.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+        <div class="col col-sm-6">
+          <a href="/welcome/rest">
+          <img src="/assets/food.jpg" alt="a" class="img-fluid">
+                    </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-1">
+      <div class="row">
+        <div class="col col-sm-6">
+          <a href="/welcome/health">
+          <img src="/assets/babycare.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+        <div class="col col-sm-6">
+          <a href="/welcome/grocery">
+          <img src="/assets/grocery.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container my-1">
+      <div class="row">
+        <div class="col col-sm-6">
+          <a href="/welcome/electronics">
+          <img src="/assets/electronics.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+        <div class="col col-sm-6">
+          <a href="/welcome/sny">
+          <img src="/assets/favstore.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container my-1">
+      <div class="row">
+        <div class="col col-sm-6">
+          <a href="/welcome/decor">
+          <img src="/assets/kitchen.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+        <div class="col col-sm-6">
+          <a href="/welcome/repair">
+          <img src="/assets/repair.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container my-1">
+      <div class="row">
+        <div class="col col-sm-6">
+          <a href="/welcome/gs">
+          <img src="/assets/education.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+        <div class="col col-sm-6">
+          <a href="/welcome/fashion">
+          <img src="/assets/fashion.jpg" alt="a" class="img-fluid">
+          
+          </a>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+
+
+
+  </body>
+</html>
+
+<style>
+body {
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+.blocky {
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+img {
+  border-radius: 15px;
+}
+
+nav .nav-link {
+color: #000;
+margin-left: .5rem;
+}
+
+nav .fa {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+nav span {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.section-division {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.section-division a .capta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.img-fluid {
+
+}
+.img-fluid:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+
+</style>
+<!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+     <script>
+        $(window).scroll(function() {
+            // 100 = The point you would like to fade the nav in.
+
+            if ($(window).scrollTop() > 100) {
+
+                $('.fixed').addClass('is-sticky');
+
+            } else {
+
+                $('.fixed').removeClass('is-sticky');
+
+            };
+        });
+        var selectedCity;
+        $("select#state").change(function() {
+          var id_value_string = $(this).val();
+          if (id_value_string == "") {
+           $("select#city option").remove();
+           var row = "<option value=\"" + "" + "\">" + "city" + "</option>";
+           $(row).appendTo("select#city");
+          } else {
+           // Send the request and update city dropdown
+            getCitiesOfState(id_value_string)
+           
+          }
+         });
+        $(".search-btn").on("click", function(e){
+          e.preventDefault()
+          var $this = $(this);
+          var $href = $this.attr("href");
+          var state = $("#state").val()
+          var city = $("#city").val()
+          var search = $("#search").val()
+          window.location = $href + '?search=' + search+ "&state=" +state+ "&city="+ city
+        })
+        function getCitiesOfState(val){
+        $.ajax({
+          dataType: "json",
+          cache: false,
+          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'))},
+          url: '/get_cities_by_state',
+          type: 'post',
+          data: {"state" : val},
+          timeout: 5000,
+          error: function(XMLHttpRequest, errorTextStatus, error) {
+           alert("Failed to submit : " + errorTextStatus + " ;" + error);
+          },
+          success: function(data) {
+           // Clear all options from city select
+           $("select#city option").remove();
+           //put in a empty default line
+           // Fill city select
+
+           var row = "<option value=\"" + "" + "\">" + "Select a city" + "</option>";
+           $(row).appendTo("select#city");
+           $.each(data, function(i, j) {
+            if(j.id == selectedCity){
+              row = "<option value=\"" + j.id + "\" selected>" + j.name + "</option>";
+            }else{
+              row = "<option value=\"" + j.id + "\">" + j.name + "</option>"; 
+            }
+            $(row).appendTo("select#city");
+           });
+          }
+         });
+       }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% else %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -363,6 +736,7 @@ function closeNav() {
 
     
 </body>
+<% end %>
  <script>
         $(window).scroll(function() {
             // 100 = The point you would like to fade the nav in.
