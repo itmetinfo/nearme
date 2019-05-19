@@ -722,8 +722,8 @@ function closeNav() {
         function getCitiesOfState(val){
         $.ajax({
           dataType: "json",
-          cache: false,
-          beforeSend: function(xhr),
+          cache: true,
+          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
