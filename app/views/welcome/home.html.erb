@@ -57,6 +57,7 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-10">
                                 <form class="form-wrap mt-4">
+                                  <%= token_tag(nil) %>
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <input type="text" placeholder="What are your looking for?" id="search" class="btn-group1">
                                        
@@ -306,6 +307,7 @@ function closeNav() {
         $.ajax({
           dataType: "json",
           cache: false,
+          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'))},
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
@@ -775,6 +777,7 @@ function closeNav() {
         $.ajax({
           dataType: "json",
           cache: false,
+          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'))},
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
