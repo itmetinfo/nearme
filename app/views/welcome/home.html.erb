@@ -723,6 +723,7 @@ function closeNav() {
         $.ajax({
           dataType: "json",
           cache: false,
+          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token'.attr('content'))},
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
