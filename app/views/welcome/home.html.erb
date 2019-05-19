@@ -306,9 +306,6 @@ function closeNav() {
         $.ajax({
           dataType: "json",
           cache: false,
-           headers: {
-    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
-  }
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
@@ -778,9 +775,6 @@ function closeNav() {
         $.ajax({
           dataType: "json",
           cache: false,
-           headers: {
-    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
-  }
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
