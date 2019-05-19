@@ -678,11 +678,12 @@ function closeNav() {
 }
 </script>
 
+
+
+    
 </body>
 <% end %>
- </script>
-
-     <script>
+ <script>
         $(window).scroll(function() {
             // 100 = The point you would like to fade the nav in.
 
@@ -722,7 +723,6 @@ function closeNav() {
         $.ajax({
           dataType: "json",
           cache: false,
-          beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
