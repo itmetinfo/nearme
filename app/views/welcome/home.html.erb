@@ -722,15 +722,12 @@ function closeNav() {
         function getCitiesOfState(val){
         $.ajax({
           dataType: "json",
-          cache: true,
+          cache: false,
           beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
           url: '/get_cities_by_state',
           type: 'post',
           data: {"state" : val},
           timeout: 5000,
-          error: function(XMLHttpRequest, errorTextStatus, error) {
-           alert("Failed to submit : " + errorTextStatus + " ;" + error);
-          },
           success: function(data) {
            // Clear all options from city select
            $("select#city option").remove();
@@ -748,6 +745,7 @@ function closeNav() {
             $(row).appendTo("select#city");
            });
           }
+          
          });
        }
     </script>
