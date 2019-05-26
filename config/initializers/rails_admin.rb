@@ -45,4 +45,42 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  # Config for model products
+  config.model Product do
+    weight 1
+
+    edit do
+      include_all_fields
+      field :state, :enum do
+        def render
+          bindings[:view].render :partial => 'rails_admin/main/state_name', :locals => { object: bindings[:object], :field => self, :form => bindings[:form] }
+        end
+
+        def form_value
+          bindings[:object].state
+        end
+      end
+      field :city, :enum do
+        def render
+          bindings[:view].render :partial => 'rails_admin/main/city_name', :locals => { object: bindings[:object], :field => self, :form => bindings[:form]}
+        end
+
+        def form_value
+          bindings[:object].city
+        end
+      end
+
+      field :area, :enum do
+        def render
+          bindings[:view].render :partial => 'rails_admin/main/area_name', :locals => { object: bindings[:object], :field => self, :form => bindings[:form]}
+        end
+
+        def form_value
+          bindings[:object].area
+        end
+      end
+
+    end
+  end
 end

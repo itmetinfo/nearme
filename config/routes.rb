@@ -694,6 +694,7 @@ Rails.application.routes.draw do
     resources :orders, controller: 'registeration_numbers/orders'
   end
   post :get_cities_by_state,       action: :get_cities_by_state, controller: :products
+  post :get_areas_by_city,       action: :get_areas_by_city, controller: :products
 
    get "/users/auth/facebook", to: "users#sign_in"
    get "/users/auth/twitter", to: "users#sign_in"

@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:get_cities_by_state, :get_areas_by_city]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -63,13 +64,22 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
-  #new methods
+
+  #get cities from state
   def get_cities_by_state
     @cities = State.find(params[:state]).cities
     respond_to do |format|
       format.json { render :json => @cities }
     end
   end 
+
+  #get area from city
+  def get_areas_by_city
+    @areas = City.find(params[:city]).areas
+    respond_to do |format|
+      format.json { render :json => @areas }
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
