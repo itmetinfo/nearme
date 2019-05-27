@@ -687,7 +687,8 @@
 <legend><span class="number">3</span> Details</legend>
 <%= form.text_field :price, id: :product_price, placeholder: "Price of your product/service (optional for services)" %>
 <%= form.select :state, options_for_select([["Select a state",""]] + State.all.map { |c| [c.name, c.id] },selected:  product.state ), {}, id: "state"%>
-<%= form.select :city, options_for_select([["Select a City",""]]),{}, :id => 'city' %>
+<%= form.select :city, options_for_select([["Select a City",""]], selected:  product.city),{}, :id => 'city' %>
+<%= form.select :area, options_for_select([["Select a Area",""]], selected:  product.area),{}, :id => 'area' %>
 
 </fieldset>
 <div class="actions">
@@ -859,9 +860,13 @@ font-size: 20px;
 }
 </style>
 <script type="text/javascript">
-var  selectedCity;
+var  selectedCity = "";
 <% if product.city.present? %>
   selectedCity = <%= product.city  %>;
+<% end %>
+var  selectedArea = "";
+<% if product.area.present? %>
+selectedArea = <%= product.area  %>;
 <% end %>
 $(function() {
   if ($("select#state").val() == "") {
@@ -871,7 +876,7 @@ $(function() {
    }
    var $val = $("select#state").val();
    if($val != ""){
-     getCitiesOfState($val)
+     getCitiesOfState($val);
    }
    
    $("select#state").change(function() {
@@ -883,9 +888,39 @@ $(function() {
     } else {
      // Send the request and update city dropdown
       getCitiesOfState(id_value_string)
-     
     }
    });
+
+
+  if ($("select#city").val() == "" && selectedCity == "") {
+    $("select#area option").remove();
+    var row = "<option value=\"" + "" + "\">" + "area" + "</option>";
+    $(row).appendTo("select#area");
+   }
+   var $val2 = $("select#city").val();
+   console.log("val________", $val2);
+   if($val2 != "" && selectedCity == ""){
+    getAreasOfCity($val2)
+   }
+   console.log("selected_city________", selectedCity);
+   if (selectedCity != "") {
+    
+    getAreasOfCity(selectedCity)
+   }
+
+    $("select#city").change(function() {
+      var id_value_string = $(this).val();
+      if (id_value_string == "") {
+        $("select#area option").remove();
+        var row = "<option value=\"" + "" + "\">" + "area" + "</option>";
+        $(row).appendTo("select#area");
+      } else {
+        // Send the request and update city dropdown
+        getAreasOfCity(id_value_string)
+        
+      }
+    });
+
 
   });  
 </script>
